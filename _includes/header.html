@@ -4,13 +4,23 @@
 <!-- Header -->
 <header id="header"{% if page.layout == "landing" %} class="alt style2"{% endif %}{% if page.layout == "home" %} class="alt"{% endif %}>
 	<a href="{{ "" | absolute_url }}/" class="logo"><strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span></a>
-	<nav>
+
+	<img src="{% link assets/images/logo_light.png %}" width="52px"	 height="auto" style="margin-top: 5px; transform: translateX(-50%); position: absolute; top: 0; left: 50%;"></img>
+
+
+		<!-- <img src="{% link assets/images/logo_light.png %}" width="40px" height="40px" style="position: absolute; left: 50%; right: 50%;"></img> -->
+
+
+	<!-- <nav>
 		<a href="#menu">Menu</a>
-	</nav>
+	</nav> -->
+
+
 </header>
 
+
 <!-- Menu -->
-<nav id="menu">
+<!-- <nav id="menu">
 	<ul class="links">
         {% for page in site.pages %}
 		    {% if page.layout == "home" %}
@@ -27,4 +37,5 @@
 		<li><a href="#" class="button special fit">Get Started</a></li>
 		<li><a href="#" class="button fit">Log In</a></li>
 	</ul>
-</nav>
+</nav> -->
+
